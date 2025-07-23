@@ -2,7 +2,7 @@ import ollama
 
 def query_llm(prompt: str):
     stream = ollama.chat(
-        model="deepseek-r1:1.5b-qwen-distill-fp16",
+        model="gemma3:4b",
         messages=[{"role": "user", "content": prompt}],
         stream=True
     )
